@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+
+}
+
+#main-area {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: -1;
+    position: fixed;
+}
+
+div {
+
+    height: 1%;
+    width: 1%;
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div:hover {
+    transform: scale(200%);
+    height: 20px !important;
+    width: 20px !important;
+    border-radius: 32px;
+    font-size: 8px;
+    color: white;
+    background-color: red;
+}
+
+
+
+#load {
+    position: fixed;
+    z-index: 100;
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#load-data {
+    background-color: white;
+    height: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+
+button {
+    width: 50%;
+    margin-bottom: 10px;
+    background-color: rgb(0, 136, 255);
+    color: white;
+    border: 1px solid rgb(0, 136, 255);
+    padding: 5px 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button:active {
+    transform: scale(95%);
+}
+
+
+span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#block-index,
+#block-borders {
+    height: 20px;
+}
+
+#mob {
+    position: fixed;
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 650px) {
+    #load-data {
+        width: 90%;
+        padding: 16px;
+    }
+
+    p {
+        margin-top: 16px !important;
+    }
+
+}

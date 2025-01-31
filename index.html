@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocks Flow</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav id="main-area"></nav>
+    <section id="load">
+        <span id="load-data">
+            <form id="block-form">
+                <label>Type the number of blocks you want to inject (1000 - 10000)</label><br>
+                <input type="number" id="block-count" min="1000" max="10000" required>
+                <label for="block-borders">Do you want borders of block?</label>
+                <input type="checkbox" id="block-borders">
+            
+                <label for="block-index">Do you want index no. of block?</label>
+                <input type="checkbox" id="block-index"><br>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="reset"
+                    style="background-color: white; border: 1px solid black; color: black;">Reset</button>
+        </span>
+        <br>
+        <p style="margin: 0px; font-size: 15px;">Note : For smooth experience give value greater than 4000 blocks</p>
+        </form>
+        
+        </span>
+ </section>
+
+    <span id="mob">
+        Press/Hover anywhere to see the Magic (*.*) <br>
+        <section id="cross" style=" color: rgb(0, 136, 255); cursor: pointer;" onclick="cross()">Hide Me !</section>
+    </span>
+
+</body>
+
+</html>
